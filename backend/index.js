@@ -8,7 +8,7 @@ const url = "mongodb+srv://admin:Pa55word@clusterfunctionup.b2nxkzl.mongodb.net/
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-mongoose.connect('url', {
+mongoose.connect( url , {
  useNewUrlParser: true,
 })
 .then(() => console.log('MongoDB Connected'))
