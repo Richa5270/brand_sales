@@ -3,12 +3,12 @@ const {mongoose} = require('mongoose');
 const router = require('./routes/route')
 const app = express();
 const cors = require('cors');
-
+const url = "mongodb+srv://admin:Pa55word@clusterfunctionup.b2nxkzl.mongodb.net/brand_sales_daily"
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-mongoose.connect('mongodb+srv://admin:Pa55word@clusterfunctionup.b2nxkzl.mongodb.net/brand_sales_daily', {
+mongoose.connect('url', {
  useNewUrlParser: true,
 })
 .then(() => console.log('MongoDB Connected'))
